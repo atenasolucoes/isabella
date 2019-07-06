@@ -115,19 +115,21 @@
                     </div>
                     <div class="col-lg-5 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
                         <h5><i class="fas mr-2 fa-laptop"></i>Faça já sua inscrição</h5>
-                        <form action="#" class="mt-4 form-row" method="post">
-                            <div class="col-sm-6">
+                        <form class="mt-4 form-row" method="POST" action="{{route('register')}}">
+                            @csrf
+                            <div class=" col-sm-6">
                                 <input class="form-control" type="text" name="Name" placeholder="Nome Completo" required="" />
                                 <input class="form-control" type="email" name="Email" placeholder="Email" required="" />
-                                <input class="form-control" type="text" name="Number" placeholder="Telefone" required="" />
+                                <input class="form-control" type="text" name="telefone" placeholder="Telefone" required="" />
                                 <input class="form-control" type="text" name="profissao" placeholder="Profissão" required="" />
                             </div>
                             <div class="col-sm-6">
 
-                                <input class="form-control" type="text" name="Number" placeholder="Endereço" required="" />
-                                <input class="form-control" type="text" name="Number" placeholder="Bairro" required="" />
-                                <input class="form-control" type="text" name="Number" placeholder="Cidade" required="" />
-                                <input class="form-control" type="password" name="Number" placeholder="Senha" required="" />
+                                <input class="form-control" type="text" name="endereco" placeholder="Endereço" required="" />
+                                <input class="form-control" type="text" name="bairro" placeholder="Bairro" required="" />
+                                <input class="form-control" type="text" name="cidade" placeholder="Cidade" required="" />
+                                <input class="form-control" type="password" name="password" placeholder="Senha" required="" />
+                                <input class="form-control" type="password" name="password_confirmation" placeholder="Confirme Senha" required="" />
                                 <input class="form-control text-capitalize" type="submit" value="Cadastrar">
                             </div>
                         </form>

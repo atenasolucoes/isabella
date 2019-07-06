@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
 
 <head>
     <meta charset="utf-8">
@@ -19,15 +19,15 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/estilo.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/painel.css') }}" rel="stylesheet">
 </head>
 
 <body>
-    <div id="app">
+    <div class="painelfundo" id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-dark  shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="imagens/logo-curso.png" alt="" style="width: 100px;">
+                    <img src="images/logo-menu-branca.png" alt="" style="width: 200px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

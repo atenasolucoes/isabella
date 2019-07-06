@@ -1,0 +1,8 @@
+body{
+     background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-azul{
+    background: rgba(37, 95, 170, 0.767) !important;
+}
