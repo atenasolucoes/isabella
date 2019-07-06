@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/inscricao', function () {
     return view('welcome');
 });
