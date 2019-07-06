@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%isabellaornellas.com/$1 [R,L]
+RewriteRule ^(.*)$ https://www.isabellaornellas.com/$1 [L,R=301]
