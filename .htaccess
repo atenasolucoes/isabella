@@ -2,5 +2,5 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^/?(.*) https://isabellaornellas.com/$1 [R,L]
 
-RewriteCond %{REQUEST_URI} !public/
+RewriteCond %{REQUEST_URI} !inscricao/public/
 RewriteRule (.*) /inscricao/public/$1 [L]
