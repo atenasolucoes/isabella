@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Curso de Oratória com Isabella Ornellas</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Curso de oratoria, Isabella Ornellas" />
+
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <!-- animation css files -->
+    <link rel="stylesheet" href="css/animation-aos.css">
+    <link href='css/aos.css' rel='stylesheet prefetch' type="text/css" media="all" />
+    <!-- //animation css files -->
+
+    <!-- css files -->
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <!-- <link href="css/style.css" rel='stylesheet' type='text/css' /> -->
+    <link href="css/estilo.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="css/fontawesome-all.css" rel="stylesheet"><!-- fontawesome css -->
+    <!-- //css files -->
+
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <!-- //google fonts -->
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="index-banner">
+        <!-- nav -->
+        <nav class="main-header ">
+            <div id="brand" data-aos="zoom-in-up">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="images/logo-menu-branca.png" class="img-fluid" alt="">
+                    </a>
+
+                </div>
+
+            </div>
+            <div id="menu">
+                <div id="menu-toggle">
+                    <div id="menu-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
+                    <li>
+                        <a href="index.html" class="active">home</a>
+                    </li>
+                    <li>
+                        <a data-toggle="modal" data-target="#exampleModalCenter1" href="#" class="scroll">Sobre o Curso</a>
+                    </li>
+                    <li>
+                        <a data-toggle="modal" data-target="#sobreisabella" role="button" href="#" class="scroll">Sobre
+                            Isabella Ornellas</a>
+                    </li>
+                    <li>
+                        <a href="#parceiros" class="scroll">Parceiros</a>
+
+                    <li>
+                        <a href="#contato" class="scroll">Contato</a>
+                    </li>
+
+                    <li>
+                        <button type="button" class="btn w3ls-btn" data-toggle="modal" aria-pressed="false" data-target="#exampleModalCenter2">
+                            Área do Participante
+                        </button>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //nav -->
+        <!-- banner -->
+        <div class="banner layer" id="home">
+            <div class="container-fluid">
+                <div class="row banner-text">
+                    <div class="imagem-isa d-none d-lg-block">
+                        <img src="images/imagem-isa.png" class="" alt="">
+                    </div>
+                    <div class="col-lg-2 ">
+
+                    </div>
+                    <div class="slider-info col-lg-5 col-md-4 text-right ">
+                        <div class="agileinfo-logo mt-5">
+                            <h2 data-aos="fade-down">
+                                <img src="images/logo-curso.png" alt="">
+                            </h2>
+                        </div>
+                        <h3 class="txt-w3_agile" data-aos="fade-down">Com Isabella Ornellas </h3>
+                        <p class="text-white">
+
+                            20 e 21 de julho | Juazeiro-BA <br>
+                            Sábado (20.07) das 08:00 as 19:00 <br>
+                            Domingo (21.07) das 08:00 as 19:00
+                        </p>
+                        <a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Sobre o curso</a>
+                        <a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">Assista o Video <i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div class="col-lg-5 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
+                        <h5><i class="fas mr-2 fa-laptop"></i>Faça já sua inscrição</h5>
+                        <form action="#" class="mt-4 form-row" method="post">
+                            <div class="col-sm-6">
+                                <input class="form-control" type="text" name="Name" placeholder="Nome Completo" required="" />
+                                <input class="form-control" type="email" name="Email" placeholder="Email" required="" />
+                                <input class="form-control" type="text" name="Number" placeholder="Telefone" required="" />
+                                <input class="form-control" type="text" name="profissao" placeholder="Profissão" required="" />
+                            </div>
+                            <div class="col-sm-6">
+
+                                <input class="form-control" type="text" name="Number" placeholder="Endereço" required="" />
+                                <input class="form-control" type="text" name="Number" placeholder="Bairro" required="" />
+                                <input class="form-control" type="text" name="Number" placeholder="Cidade" required="" />
+                                <input class="form-control" type="password" name="Number" placeholder="Senha" required="" />
+                                <input class="form-control text-capitalize" type="submit" value="Cadastrar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //banner -->
+    </header>
+    <!-- //header -->
+
+    <!-- banner bottom -->
+    <section class="banner-bottom py-5" id="parceiros">
+        <div class="container py-md-3">
+            <h4 class="text-center" data-aos="zoom-in">Parceiros</h4>
+            <ul class="list-unstyled pt-5 partners-icon text-center">
+                <!-- <li data-aos="fade-up">
+					<i class="fab fa-supple clr1"></i>
+				</li>
+				<li data-aos="fade-up">
+					<i class="fab fa-aviato clr2"></i>
+				</li>
+				<li data-aos="fade-up">
+					<i class="fab fa-cpanel clr3"></i>
+				</li>
+				<li data-aos="fade-up">
+					<i class="fab fa-hooli clr4"></i>
+				</li>
+				<li data-aos="fade-up">
+					<i class="fab fa-supple clr5"></i>
+				</li>
+				<li data-aos="fade-up">
+					<i class="fab fa-aviato clr6"></i>
+				</li> -->
+            </ul>
+        </div>
+    </section>
+    <!-- //banner bottom -->
+
+
+
+
+
+
+    <!--footer -->
+    <footer id="contato">
+        <section class="footer footer_w3layouts_section_1its py-5 ">
+            <div class="container py-md-4">
+                <div class="footer-grid_section text-center" data-aos="zoom-in">
+                    <div class="footer-title mb-3 d-inline-block">
+                        <a href="#"><img src="images/logo-branca.png" alt=""></a>
+                        <a href="#"><img src="images/logo-atualiza-branca.png" alt="" width="150px;"></a>
+                    </div>
+                    <div class="text-center">
+                        <p>
+                            <i class="fab fa-whatsapp" style="font-size: 30px;"></i>
+                        </p>
+                        <p>
+                            (74) 98803-1102 | (87) 99971-9632
+                        </p>
+                    </div>
+                    <!-- <div class="footer-text">
+					<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ipnut libero malesuada feugiat.
+					 Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</div> -->
+                    <ul class="social_section_1info">
+                        <li class="mb-2 facebook"><a href="#"><i class="fab mr-1 fa-facebook-f"></i>facebook</a></li>
+                        <li class="mb-2 twitter"><a href="#"><i class="fab mr-1 fa-twitter"></i>twitter</a></li>
+                        <li class="google"><a href="#"><i class="fab mr-1 fa-instagram"></i>Instagram</a></li>
+                        <li class="linkedin"><a href="#"><i class="fab mr-1 fa-linkedin-in"></i>linkedin</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </section>
+    </footer>
+    <!-- //footer -->
+
+    <!-- copyright -->
+    <div class="cpy-right text-center py-3">
+        <p class="">© 2019 | by <a href="http://atenaagencia.com"> Atena Agência</a>
+        </p>
+    </div>
+    <!-- //copyright -->
+
+    <!-- Vertically centered Modal -->
+    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle"><img src="images/logo.png" alt="" style="width: 200px"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <!-- <img src="images/banner.jpg" class="img-fluid mb-3" alt="Modal Image" /> -->
+                            Além de ser sinônimo de retórica, a oratória é mais do que uma arte para falar em público, é
+                            uma ferramenta, por assim
+                            dizer, de informar, influenciar ouvintes, espectadores e em alguns casos telespectadores é
+                            um conjunto de técnicas que
+                            visam ao ato de falar em público mais adequado.
+                            <br>
+                            O Curso de Oratória, com a jornalista Isabella Ornellas, traz como diferencial técnicas de
+                            Coaching e PNL. Através da
+                            teoria, de práticas e desafios, os participantes irão construir conhecimentos sólidos de
+                            oratória e comunicação de
+                            excelência.
+                            <br>
+                            Um curso inovador, diferente do que existe atualmente no mercado. Que incentiva a
+                            autoestima, a autorresponsabilidade e
+                            principalmente a mudança de percepção das pessoas sobre o poder inquestionável de uma boa
+                            comunicação. Você merece fazer
+                            parte dessa turma
+                        </div>
+                        <div class="col-sm-6">
+                            O curso contempla: <br>
+                            <br>
+                            🎯Principais técnicas de Oratória;<br>
+                            🎯Apresentação em Público,<br>
+                            🎯Controle do medo,<br>
+                            🎯Marketing pessoal,<br>
+                            🎯Linguagem corporal,<br>
+                            🎯Dicção e impostação da voz,<br>
+                            🎯Leitura expressiva,<br>
+                            🎯Clareza e objetividade no discurso,<br>
+                            🎯 Técnicas de Coaching e PNL,<br>
+                            🎯 Técnica TPD - Teoria, Prática e Desafio<br><br>
+
+                            E ainda:<br>
+                            Material didático com apostila completa,<br>
+                            Sorteios,<br>
+                            Brindes,<br>
+                            Coffebreack,<br>
+                            🥇Certificado de 20h
+                        </div>
+                    </div>
+                    .
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sobreisabella" tabindex="-1" role="dialog" aria-labelledby="sobreisabella" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle"><img src="images/logo.png" alt="" style="width: 200px"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-justify">
+
+                    Mãe, jornalista, mestre de cerimônia, assessora de comunicação, radialista, palestrante e
+                    empreendedora. Especialista em
+                    Gestão empresarial e Marketing, Diretora da agência Atualiz@ Comunicação - voltada para cursos e
+                    palestras. É formada em
+                    Jornalismo em Multimeios pela UNEB. É Coach de Comunicação e Master Practitioner em PNL (Programação
+                    Neurolinguística).
+                    Palestrante na área de Excelência em Comunicação e Atendimento; Mídia Training, Marketing Pessoal,
+                    Empreendedorismo
+                    Criativo e Oratória. <br>
+                    Com quase 20 anos de atuação, Isabella possui vasto conhecimento na área jornalística. Atuou por 15
+                    anos em filiadas da
+                    Rede Globo, onde desempenhou as funções de Chefe de Redação e Reportagem e Coordenadora dos portais
+                    G1 e
+                    GloboEsporte.com, além de repórter, produtora executiva e apresentadora.
+                    <br>
+                    Atualmente apresenta dois programas na Rádio Tropical Sat, em Juazeiro: Ligação Direta Primeira
+                    Edição e Revista com
+                    Isabella Ornellas, onde aborda temas de interesses locais e nacionais. Por dois anos esteve a frente
+                    dos programas
+                    Atualiz@ com Isabella Ornellas e Vida&Saúde, ambos na Rádio Ponte FM, da Rede Novo Tempo, em
+                    Petrolina- PE.
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Vertically centered Modal -->
+
+    <!-- video Modal Popup -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body video">
+                    <iframe src="https://player.vimeo.com/video/43982091"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //video Model Popup -->
+
+    <!--/Login-->
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-azul">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle"><img src="images/logo-curso.png" alt="" style="width: 200px"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="login px-4 mx-auto mw-100">
+                        <h5 class="text-center mb-4">Realize seu login</h5>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label class="mb-2">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
+
+                            </div>
+                            <div class="form-group">
+                                <label class="mb-2">Senha</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
+                            </div>
+
+                            <button type="submit" class="btn btn-light btn-block bg-rosa submit mt-2 text-white">Entrar</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//Login-->
+
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- //js -->
+
+    <!-- animation js -->
+    <script src='js/aos.js'></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+    <!-- //animation js -->
+
+    <!-- testimonials  Responsiveslides -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        // You can also use"$(window).load(function() {"
+        $(function() {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function() {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function() {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!-- //testimonials  Responsiveslides -->
+
+    <!-- sticky nav bar-->
+    <script>
+        $(() => {
+
+            //On Scroll Functionality
+            $(window).scroll(() => {
+                var windowTop = $(window).scrollTop();
+                windowTop > 100 ? $('nav').addClass('navShadow') : $('nav').removeClass('navShadow');
+                windowTop > 100 ? $('ul.nav-agile').css('top', '50px') : $('ul.nav-agile').css('top', '160px');
+            });
+
+            //Click Logo To Scroll To Top
+            $('#logo').on('click', () => {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            /*
+             //Smooth Scrolling Using Navigation Menu
+             $('a[href*="#"]').on('click', function (e) {
+               $('html,body').animate({
+            	 scrollTop: $($(this).attr('href')).offset().top - 100
+               }, 500);
+               e.preventDefault();
+             });
+            */
+
+            //Toggle Menu
+            $('#menu-toggle').on('click', () => {
+                $('#menu-toggle').toggleClass('closeMenu');
+                $('ul').toggleClass('showMenu');
+
+                $('li').on('click', () => {
+                    $('ul').removeClass('showMenu');
+                    $('#menu-toggle').removeClass('closeMenu');
+                });
+            });
+
+        });
+    </script>
+    <!-- //sticky nav bar -->
+
+    <script src="js/smoothscroll.js"></script><!-- Smooth scrolling -->
+
+    <!-- start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+			var defaults = {
+				  containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			 };
+			*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!-- //end-smoth-scrolling -->
+
+</body>
+
+</html>
