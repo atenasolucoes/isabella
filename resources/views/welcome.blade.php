@@ -186,9 +186,8 @@
         <section class="footer footer_w3layouts_section_1its py-5 ">
             <div class="container py-md-4">
                 <div class="footer-grid_section text-center" data-aos="zoom-in">
-                    <div class="footer-title mb-3 d-inline-block">
-                        <a href="#"><img src="images/logo-branca.png" alt=""></a>
-                        <a href="#"><img src="images/logo-atualiza-branca.png" alt="" width="150px;"></a>
+                    <div class="footer-title mb-3">
+                        <a href="#"><img src="images/logo-menu-branca.png" alt=""></a>
                     </div>
                     <div class="text-center">
                         <p>
