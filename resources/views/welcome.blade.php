@@ -115,11 +115,18 @@
                     </div>
                     <div class="col-lg-5 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
                         <h5><i class="fas mr-2 fa-laptop"></i>Faça já sua inscrição</h5>
-                        <form class="mt-4 form-row" method="POST" action="{{route('register')}}">
+                        @if($errors->any())
+                        <div class="bg-azul p-4">
+                        @foreach($errors->all() as $message)
+                            <p>{{$message}}</p>
+                        @endforeach                     
+                        </div>
+                        @endif
+                        <form class="mt-4 form-row" method="POST" action="{{route('registrar')}}">
                             @csrf
                             <div class=" col-sm-6">
-                                <input class="form-control" type="text" name="Name" placeholder="Nome Completo" required="" />
-                                <input class="form-control" type="email" name="Email" placeholder="Email" required="" />
+                                <input class="form-control" type="text" name="name" placeholder="Nome Completo" required="" />
+                                <input class="form-control" type="email" name="email" placeholder="Email" required="" />
                                 <input class="form-control" type="text" name="telefone" placeholder="Telefone" required="" />
                                 <input class="form-control" type="text" name="profissao" placeholder="Profissão" required="" />
                             </div>

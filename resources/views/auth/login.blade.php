@@ -10,6 +10,7 @@
                 </div>
 
                 <div class="card-body">
+                   <p class="text-success">{{old('cad_sucesso')}}</p> 
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
