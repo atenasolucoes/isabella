@@ -112,7 +112,7 @@
                                     @if($inscricao->situacao == 'confirmada')
                                     Pagamento já foi efetuado
                                     @else
-                                    <a target="_blank" class="btn btn-primary" href="{{$inscricao->curso->link_pagamento}}" data-toggle="modal" data-target="#myModal"> Realizar pagamento</a>
+                                    <a target="_blank" class="btn btn-primary" href="{{$inscricao->curso->link_pagamento}}"> Realizar pagamento</a>
                                     @endif
 
                                 </td>
