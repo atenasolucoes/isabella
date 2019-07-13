@@ -78,9 +78,15 @@
                     </li>
 
                     <li>
+                        @if(Auth::check())
+                        <a href="/home"><button type="button" class="btn w3ls-btn" aria-pressed="false">
+                                Área do Participante
+                            </button></a>
+                        @else
                         <button type="button" class="btn w3ls-btn" data-toggle="modal" aria-pressed="false" data-target="#exampleModalCenter2">
                             Área do Participante
                         </button>
+                        @endif
                     </li>
                     <li></li>
                 </ul>
@@ -117,9 +123,9 @@
                         <h5><i class="fas mr-2 fa-laptop"></i>Faça já sua inscrição</h5>
                         @if($errors->any())
                         <div class="bg-azul p-4">
-                        @foreach($errors->all() as $message)
+                            @foreach($errors->all() as $message)
                             <p>{{$message}}</p>
-                        @endforeach                     
+                            @endforeach
                         </div>
                         @endif
                         <form class="mt-4 form-row" method="POST" action="{{route('registrar')}}">
@@ -153,24 +159,24 @@
         <div class="container py-md-3">
             <h4 class="text-center" data-aos="zoom-in">Parceiros</h4>
             <ul class="list-unstyled pt-5 partners-icon text-center">
-                <!-- <li data-aos="fade-up">
-					<i class="fab fa-supple clr1"></i>
-				</li>
-				<li data-aos="fade-up">
-					<i class="fab fa-aviato clr2"></i>
-				</li>
-				<li data-aos="fade-up">
-					<i class="fab fa-cpanel clr3"></i>
-				</li>
-				<li data-aos="fade-up">
-					<i class="fab fa-hooli clr4"></i>
-				</li>
-				<li data-aos="fade-up">
-					<i class="fab fa-supple clr5"></i>
-				</li>
-				<li data-aos="fade-up">
-					<i class="fab fa-aviato clr6"></i>
-				</li> -->
+                <li data-aos="fade-up">
+                    <img src="images/parceiros/cdl.jpg" style="width:250px">
+                </li>
+                <li data-aos="fade-up">
+                    <img src="images/parceiros/grafica.jpg" style="width:250px">
+                </li>
+                <li data-aos="fade-up">
+                    <img src="images/parceiros/uninassau.jpg" style="width:250px">
+                </li>
+                <li data-aos="fade-up">
+                    <img src="images/parceiros/israel.jpg" style="width:250px">
+                </li>
+                <li data-aos="fade-up">
+                    <img src="images/parceiros/empreendedoras.jpg" style="width:250px">
+                </li>
+                <li data-aos="fade-up">
+                    <img src="images/parceiros/atena.png" style="width:250px">
+                </li>
             </ul>
         </div>
     </section>
@@ -363,15 +369,16 @@
                 <div class="modal-body">
                     <div class="login px-4 mx-auto mw-100">
                         <h5 class="text-center mb-4">Realize seu login</h5>
-                        <form action="#" method="post">
+                        <form action="{{route('logar')}}" method="post">
+                            @csrf
                             <div class="form-group">
                                 <label class="mb-2">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="" required="">
 
                             </div>
                             <div class="form-group">
                                 <label class="mb-2">Senha</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="" name="password">
                             </div>
 
                             <button type="submit" class="btn btn-light btn-block bg-rosa submit mt-2 text-white">Entrar</button>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use curso\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class indexController extends Controller
 {
@@ -43,5 +44,17 @@ class indexController extends Controller
 
         return redirect('/login')
         ->withInput(['cad_sucesso' => 'Cadastro realizado com sucesso realize seu login!']);
+    }
+
+    public function logar(Request $request)
+    {
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+          
+          
+            return redirect('/home');
+
+        }else{
+            return redirect('/login')->withInput(['mensagem_erro' => 'Email ou senha Inválidos']);
+        }
     }
 }

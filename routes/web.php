@@ -19,3 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/registrar', 'indexController@registrar')->name('registrar');
+Route::post('/logar', 'indexController@logar')->name('logar');
+Route::post('/inscricao', 'HomeController@inscricao')->name('inscricao');
+Route::post('/c_inscricao', 'HomeController@c_inscricao')->name('c_inscricao');

@@ -11,7 +11,7 @@
 
                 <div class="card-body">
                     <h3>Registre-se</h3>
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('registrar') }}">
                         @csrf
 
                         <div class="form-group row">
