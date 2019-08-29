@@ -112,9 +112,9 @@
                         <h3 class="txt-w3_agile" data-aos="fade-down">Com Isabella Ornellas </h3>
                         <p class="text-white">
 
-                            20 e 21 de julho | Juazeiro-BA <br>
-                            Sábado (20.07) das 08:00 as 19:00 <br>
-                            Domingo (21.07) das 08:00 as 19:00
+                            28 e 29 de Setembro | Juazeiro-BA <br>
+                            Sábado (28.09) das 08:00 as 19:00 <br>
+                            Domingo (29.09) das 08:00 as 19:00
                         </p>
                         <a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Sobre o curso</a>
                         <a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">Assista o Video <i class="fas fa-play-circle"></i></a>
