@@ -162,9 +162,6 @@
             <h4 class="text-center" data-aos="zoom-in">Parceiros</h4>
             <ul class="list-unstyled pt-5 partners-icon text-center">
                 <li data-aos="fade-up">
-                    <img src="images/parceiros/cdl.jpg" style="width:250px">
-                </li>
-                <li data-aos="fade-up">
                     <img src="images/parceiros/grafica.jpg" style="width:250px">
                 </li>
                 <li data-aos="fade-up">
