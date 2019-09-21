@@ -117,7 +117,9 @@
                             Domingo (29.09) das 08:00 as 19:00
                         </p>
                         <a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Sobre o curso</a>
-                        <a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">Assista o Video <i class="fas fa-play-circle"></i></a>
+                        <a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">Ver os depoimentos
+
+                        </a>
                     </div>
                     <div class="col-lg-5 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
                         <h5><i class="fas mr-2 fa-laptop"></i>Faça já sua inscrição</h5>
@@ -344,8 +346,56 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body video">
-                    <iframe src="https://player.vimeo.com/video/43982091"></iframe>
+                <div class="modal-body ">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="3"></li>
+                            <li data-target="#demo" data-slide-to="4"></li>
+                            <li data-target="#demo" data-slide-to="5"></li>
+                            <li data-target="#demo" data-slide-to="6"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/depoimentos/01.jpg" alt="depoimento">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="/images/depoimentos/02.jpg" alt="depoimento">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="/images/depoimentos/03.jpg" alt="depoimento">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="/images/depoimentos/04.jpg" alt="depoimento">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="/images/depoimentos/05.jpg" alt="depoimento">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="/images/depoimentos/06.jpg" alt="depoimento">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="/images/depoimentos/07.jpg" alt="depoimento">
+                            </div>
+
+                        </div>
+
+                        <!-- Left and right controls -->
+
+
+                    </div>
+                    <a class="btn btn-dark" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="btn btn-dark" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
                 <div class="modal-footer">
                     <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->

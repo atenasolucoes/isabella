@@ -48,8 +48,7 @@ class indexController extends Controller
 
     public function logar(Request $request)
     {
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-          
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {          
           
             return redirect('/home');
 
