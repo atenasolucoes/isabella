@@ -174,6 +174,9 @@
                     <img src="images/parceiros/empreendedoras.jpg" style="width:250px">
                 </li>
                 <li data-aos="fade-up">
+                    <img src="images/parceiros/barbara.jpg" style="width:100px">
+                </li>
+                <li data-aos="fade-up">
                     <img src="images/parceiros/atena.png" style="width:250px">
                 </li>
             </ul>
