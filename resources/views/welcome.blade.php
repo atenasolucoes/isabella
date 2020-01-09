@@ -111,10 +111,7 @@
                         </div>
                         <h3 class="txt-w3_agile" data-aos="fade-down">Com Isabella Ornellas </h3>
                         <p class="text-white">
-
-                            28 e 29 de Setembro | Juazeiro-BA <br>
-                            Sábado (28.09) das 08:00 as 19:00 <br>
-                            Domingo (29.09) das 08:00 as 19:00
+                         <strong>Sexta (31/01)</strong> das 19h &agrave;s 22h<br /><strong>S&aacute;bado (01/02)</strong> das 08h as 18h<br /><strong>Domingo (02/02)</strong> das 09h as 18h
                         </p>
                         <a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Sobre o curso</a>
                         <a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">Ver os depoimentos
@@ -282,6 +279,18 @@
                             Brindes,<br>
                             Coffebreack,<br>
                             🥇Certificado de 20h
+                        </div>
+                        <div class="col-sm-12">
+                            <p>🎤 PAGAMENTO &Agrave; VISTA</p>
+<p>Para pagamento &agrave; vista, estamos disponibilizando duas contas para dep&oacute;sito ou transfer&ecirc;ncia banc&aacute;ria</p>
+<p>✅Bradesco /Ag&ecirc;ncia 3045 /Conta Corrente 45707-8</p>
+<p>✅Caixa Econ&ocirc;mica Federal / Ag&ecirc;ncia 0080 / Oper&ccedil;&atilde;o 13 / Conta Poupan&ccedil;a 160 252-5</p>
+<p>Favorecido: Isabella Ornellas Soares</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>🎤 PAGAMENTO  PELO SITE</p>
+<p>CLICK AQUI:</p>
+<a href="/login" class="btn btn-primary"> Acesse aqui</a>
                         </div>
                     </div>
                     .
