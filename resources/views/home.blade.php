@@ -83,11 +83,16 @@
                     @endif
 
                     <div>
-                        @if(count($usuario->inscricao) == 0)
+                        @if(count($usuario->inscricao) == 0 || count($usuario->inscricao) < 3)
+                           @if(count($usuario->inscricao) == 0) 
                         <p>Você não está escrito em nenhum curso!</p>
-                        <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#myModal">Inscrever-se</button>
-                        @else
-                        <p>Informamos que quando o pagamento for efetuado, entrar em contato para que o mesmo seja validado.</p>
+                         <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#myModal">Inscrever-se</button>
+                        @endif
+                        <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#myModal">Inscrever-se Outro curso</button>
+                                            
+                        @endif
+                        @if(count($usuario->inscricao) > 0)
+  <p>Informamos que quando o pagamento for efetuado, entrar em contato para que o mesmo seja validado.</p>
                         <table class="table">
                             <tr>
                                 <th>
