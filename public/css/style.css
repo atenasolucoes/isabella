@@ -99,7 +99,7 @@ nav.main-header {
 nav.main-header.navShadow {
   -webkit-box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
-  height: 80px;
+  height: 100px;
      background: #00BCD4;
 }
 

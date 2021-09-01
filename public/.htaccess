@@ -5,7 +5,7 @@
 
     RewriteEngine On
     RewriteCond %{HTTPS} !=on
-    RewriteRule ^/?(.*) https://isabellaornellas.com/$1 [R,L]
+    RewriteRule ^/?(.*) https://isabellaornellas.com.br/public/$1 [R,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

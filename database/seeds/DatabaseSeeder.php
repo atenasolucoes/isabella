@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     {
         DB::table('users')->insert([
             'name' => 'Isabela Ornellas',
-            'email' => 'admin@isabellaornellas.com',
+            'email' => 'admin@isabellaornellas.com.br',
             'password' => Hash::make('cursoisabella'),
             'telefone' => '99999999',
             'profissao' => '---------',
@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
         DB::table('cursos')->insert([
             'nome' => 'Curso de Oratória',
             'data' => date('Y-m-d'),
-            'link_pagamento' => 'https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=319412887-ab3fc0c5-678f-40cb-989c-e430ceb4040c',
+            'link_pagamento' => 'https://mpago.la/18nwqVx',
         ]);
     }
 }

@@ -44,9 +44,9 @@
         <nav class="main-header ">
             <div id="brand" data-aos="zoom-in-up">
                 <div id="logo">
-                    <a href="index.html">
-                        <img src="images/logo-menu-branca.png" class="img-fluid" alt="">
-                    </a>
+                    <a href="./">
+                        <img src="images/logo-menu-branca.png" class="" alt="" style="width: 250px; max-width:100%">
+                    </a> 
 
                 </div>
 
@@ -61,7 +61,7 @@
                 </div>
                 <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
                     <li>
-                        <a href="index.html" class="active">home</a>
+                        <a href="/" class="active">home</a>
                     </li>
                     <li>
                         <a data-toggle="modal" data-target="#exampleModalCenter1" href="#" class="scroll">Sobre o Curso</a>
@@ -70,9 +70,9 @@
                         <a data-toggle="modal" data-target="#sobreisabella" role="button" href="#" class="scroll">Sobre
                             Isabella Ornellas</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="#parceiros" class="scroll">Parceiros</a>
-
+                    </li> --}}
                     <li>
                         <a href="#contato" class="scroll">Contato</a>
                     </li>
@@ -111,10 +111,11 @@
                         </div>
                         <h3 class="txt-w3_agile" data-aos="fade-down">Com Isabella Ornellas </h3>
                         <p class="text-white">
-                         <strong>Sexta (31/01)</strong> das 19h &agrave;s 22h<br /><strong>S&aacute;bado (01/02)</strong> das 08h as 18h<br /><strong>Domingo (02/02)</strong> das 09h as 18h
+                         <strong>Sexta</strong> (22/10) das 19h &agrave;s 22h<br /><strong>S&aacute;bado</strong> (23/10) das 08:00 às
+                            18:00<br /><strong>Domingo</strong> (24/10) das 09:00 às 17:00
                         </p>
                         <a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Sobre o curso</a>
-                        <a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">Ver os depoimentos
+                        <a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#depo" data-toggle="" data-target="#depo" role="button">Ver os depoimentos
 
                         </a>
                     </div>
@@ -152,11 +153,60 @@
         <!-- //banner -->
     </header>
     <!-- //header -->
+<section class="banner-bottom py-2 bg-azul" id="duvidas">
+    <div class="container py-md-3 bg-light" style="border-radius: 30px; ">
+    <p class="text-center"><h3 class="text-center">DÚVIDAS FREQUENTES</h3></p>
+    <p class="text-center">Para quem o Curso de Oratória COMO FALAR EM PÚBLICO é destinado?</p>
+    <hr>
+<p style="text-align: center;"><strong><em>"O nosso curso &eacute; destinado a qualquer pessoa que deseje melhorar a sua
+            comunica&ccedil;&atilde;o."</em></strong></p>
+<p style="text-align: center;">📌</p>
+<p style="text-align: center;">Palestrantes, Advogados, Pol&iacute;ticos, L&iacute;deres, Gestores, Empreendedores,
+    Comerciantes, Vendedores, Profissionais da &aacute;rea de sa&uacute;de, Jornalistas, Professores, Estudantes
+    universit&aacute;rios, Influenciadores digitais... ou seja, Voc&ecirc; que deseja evoluir!</p>
+<p style="text-align: center;"><strong>Esse curso &eacute; para voc&ecirc;!</strong></p>
+<p style="text-align: center;">Venha dar um passo a mais na sua vida profissional e pessoal. Aprimore suas
+    t&eacute;cnicas de comunica&ccedil;&atilde;o e persuas&atilde;o.</p>
+<p style="text-align: center;">🎤🎬</p>
+<p style="text-align: center;"><strong>CURSO COMO FALAR EM P&Uacute;BLICO - ORAT&Oacute;RIA COM ISABELLA
+        ORNELLAS</strong></p>
+    </div>
+</section>
 
     <!-- banner bottom -->
-    <section class="banner-bottom py-5" id="parceiros">
+    <section class="banner-bottom py-5" id="depo">
         <div class="container py-md-3">
-            <h4 class="text-center" data-aos="zoom-in">Parceiros</h4>
+            <p class="text-center">
+                <h3 class="text-center">DEPOIMENTOS</h3>
+                <hr>
+            </p>
+            <div class="row">
+                <div class="col-sm-6 mt-2">
+                    <video width="100%" height="100%" controls style="border-radius: 30px; ">
+                        <source src="videos/01.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-sm-6 mt-2">
+                    <video width="100%" height="100%" controls style="border-radius: 30px; ">
+                        <source src="videos/02.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-sm-6 mt-2">
+                    <video width="100%" height="100%" controls style="border-radius: 30px; ">
+                        <source src="videos/03.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-sm-6 mt-2">
+                    <video width="100%" height="100%" controls style="border-radius: 30px; ">
+                        <source src="videos/04.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            {{-- <h4 class="text-center" data-aos="zoom-in">Parceiros</h4>
             <ul class="list-unstyled pt-5 partners-icon text-center">
                 <li data-aos="fade-up">
                     <img src="images/parceiros/grafica.jpg" style="width:250px">
@@ -176,7 +226,7 @@
                 <li data-aos="fade-up">
                     <img src="images/parceiros/atena.png" style="width:250px">
                 </li>
-            </ul>
+            </ul> --}}
         </div>
     </section>
     <!-- //banner bottom -->
@@ -222,7 +272,7 @@
 
     <!-- copyright -->
     <div class="cpy-right text-center py-3">
-        <p class="">© 2019 | by <a href="http://atenaagencia.com"> Atena Agência</a>
+        <p class="">© {{{date('Y')}}} | by <a href="http://atenaagencia.com"> Atena Agência</a>
         </p>
     </div>
     <!-- //copyright -->
@@ -262,15 +312,17 @@
                         <div class="col-sm-6">
                             O curso contempla: <br>
                             <br>
-                            🎯Principais técnicas de Oratória;<br>
+                            🎯Oratória em meios virtuais (Novo Normal),<br>
+                            🎯Principais técnicas de Oratória,<br>
                             🎯Apresentação em Público,<br>
+                            🎯Comunicação e Vendas,<br>
                             🎯Controle do medo,<br>
                             🎯Marketing pessoal,<br>
                             🎯Linguagem corporal,<br>
                             🎯Dicção e impostação da voz,<br>
                             🎯Leitura expressiva,<br>
                             🎯Clareza e objetividade no discurso,<br>
-                            🎯 Técnicas de Coaching e PNL,<br>
+                            🎯 Técnica V.A.I,<br>
                             🎯 Técnica TPD - Teoria, Prática e Desafio<br><br>
 
                             E ainda:<br>
@@ -281,17 +333,33 @@
                             🥇Certificado de 20h
                         </div>
                         <div class="col-sm-12">
-                            <p>🎤 PAGAMENTO &Agrave; VISTA</p>
-<p>Para pagamento &agrave; vista, estamos disponibilizando duas contas para dep&oacute;sito ou transfer&ecirc;ncia banc&aacute;ria</p>
-<p>✅Bradesco /Ag&ecirc;ncia 3045 /Conta Corrente 45707-8</p>
-<p>✅Caixa Econ&ocirc;mica Federal / Ag&ecirc;ncia 0080 / Oper&ccedil;&atilde;o 13 / Conta Poupan&ccedil;a 160 252-5</p>
-<p>Favorecido: Isabella Ornellas Soares</p>
+                            <hr>
+                  <p>Aproveite!!! Rumo ao sucesso!!🎤🎥⚓🎬🧠🌀</p>
+                <p>Estamos com pre&ccedil;os promocionais!</p>
+                <p>De R$ 700,00</p>
+                <p><strong>Por apenas R$ 660,00</strong></p>
+                <p>🎤 PARCELE EM AT&Eacute; 6X SEM JURIS COM O SEU CART&Atilde;O DE CR&Eacute;DITO,</p>
+                <p><strong>PREÇO À VISTA - R$ 590,00</strong></p>
                         </div>
                         <div class="col-sm-12">
-                            <p>🎤 PAGAMENTO  PELO SITE</p>
-<p>CLICK AQUI:</p>
-<a href="/login" class="btn btn-primary"> Acesse aqui</a>
+                            <p>🎤 PAGAMENTO PELO SITE</p>
+                            <p>CLICK AQUI:</p>
+                            <a href="/login" class="btn btn-primary"> Acesse aqui</a>
                         </div>
+
+                        <div class="col-sm-12">
+                            <hr>
+                            <p>🎤 PAGAMENTO &Agrave; VISTA</p> <br>
+                            <p>Para pagamento à vista, estamos disponibilizando duas contas para depósito ou transferência bancária e PIX</p>
+                            <p>✅ PIX - CELULAR - 74988031102</p>
+                            <p>✅Bradesco /Ag&ecirc;ncia 3045 /Conta Corrente 45707-8</p>
+                            <p>✅Caixa Econ&ocirc;mica Federal / Ag&ecirc;ncia 0080 / Oper&ccedil;&atilde;o 13 / Conta Poupan&ccedil;a 160 252-5</p>
+                            <p>Favorecido: Isabella Ornellas Soares</p>
+                            <p>100% de satisfa&ccedil;&atilde;o garantida!</p>
+                            <p>🛑 &Eacute; NECESS&Aacute;RIO ENVIAR O COMPROVANTE DE PAGAMENTO PARA VALIDA&Ccedil;&Atilde;O DA
+                                INSCRI&Ccedil;&Atilde;O PELO WHATSAPP (87) 99622-1031</p>
+                        </div>
+                        
                     </div>
                     .
                 </div>
