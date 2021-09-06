@@ -98,7 +98,7 @@
             <div class="container-fluid">
                 <div class="row banner-text">
                     <div class="imagem-isa d-none d-lg-block">
-                        <img src="images/imagem-isa.png" class="" alt="">
+                        <img src="images/imagem-isa3.png" class="" alt="">
                     </div>
                     <div class="col-lg-2 ">
 
@@ -249,7 +249,7 @@
                             <i class="fab fa-whatsapp" style="font-size: 30px;"></i>
                         </p>
                         <p>
-                            (74) 98803-1102 | (87) 99971-9632
+                            (74) 98803-1102 | (87) 99622-1031
                         </p>
                     </div>
                     <!-- <div class="footer-text">
@@ -338,13 +338,13 @@
                 <p>Estamos com pre&ccedil;os promocionais!</p>
                 <p>De R$ 700,00</p>
                 <p><strong>Por apenas R$ 660,00</strong></p>
-                <p>🎤 PARCELE EM AT&Eacute; 6X SEM JURIS COM O SEU CART&Atilde;O DE CR&Eacute;DITO,</p>
+                <p>🎤 PARCELE EM AT&Eacute; 6X SEM JUROS COM O SEU CART&Atilde;O DE CR&Eacute;DITO,</p>
                 <p><strong>PREÇO À VISTA - R$ 590,00</strong></p>
                         </div>
                         <div class="col-sm-12">
                             <p>🎤 PAGAMENTO PELO SITE</p>
                             <p>CLICK AQUI:</p>
-                            <a href="/login" class="btn btn-primary"> Acesse aqui</a>
+                            <a href="{{route('login')}}" class="btn btn-primary"> Acesse aqui</a>
                         </div>
 
                         <div class="col-sm-12">
@@ -353,7 +353,7 @@
                             <p>Para pagamento à vista, estamos disponibilizando duas contas para depósito ou transferência bancária e PIX</p>
                             <p>✅ PIX - CELULAR - 74988031102</p>
                             <p>✅Bradesco /Ag&ecirc;ncia 3045 /Conta Corrente 45707-8</p>
-                            <p>✅Caixa Econ&ocirc;mica Federal / Ag&ecirc;ncia 0080 / Oper&ccedil;&atilde;o 13 / Conta Poupan&ccedil;a 160 252-5</p>
+                            <p>✅Caixa Econ&ocirc;mica Federal / Ag&ecirc;ncia 0080 / Operação 13 / Conta Poupan&ccedil;a 160 252-5</p>
                             <p>Favorecido: Isabella Ornellas Soares</p>
                             <p>100% de satisfa&ccedil;&atilde;o garantida!</p>
                             <p>🛑 &Eacute; NECESS&Aacute;RIO ENVIAR O COMPROVANTE DE PAGAMENTO PARA VALIDA&Ccedil;&Atilde;O DA
