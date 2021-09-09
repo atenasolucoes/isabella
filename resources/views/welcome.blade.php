@@ -257,10 +257,9 @@
 					 Lorem ipsum dolor sit amet, consectetur elit.</p>
 				</div> -->
                     <ul class="social_section_1info">
-                        <li class="mb-2 facebook"><a href="#"><i class="fab mr-1 fa-facebook-f"></i>facebook</a></li>
-                        <li class="mb-2 twitter"><a href="#"><i class="fab mr-1 fa-twitter"></i>twitter</a></li>
-                        <li class="google"><a href="#"><i class="fab mr-1 fa-instagram"></i>Instagram</a></li>
-                        <li class="linkedin"><a href="#"><i class="fab mr-1 fa-linkedin-in"></i>linkedin</a></li>
+                        <li class="mb-2 facebook"><a href="https://www.facebook.com/cursodeoratoria1-101187468956197/"><i class="fab mr-1 fa-facebook-f"></i>facebook</a></li>
+                        <li class="google"><a href="https://instagram.com/cursodeoratoria1?utm_medium=copy_link"><i class="fab mr-1 fa-instagram"></i>Instagram</a></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/isabella-ornellas-988542b5"><i class="fab mr-1 fa-linkedin-in"></i>linkedin</a></li>
                     </ul>
                 </div>
 
