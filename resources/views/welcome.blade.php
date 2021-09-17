@@ -63,13 +63,21 @@
                     <li>
                         <a href="/" class="active">home</a>
                     </li>
-                    <li>
-                        <a data-toggle="modal" data-target="#exampleModalCenter1" href="#" class="scroll">Sobre o Curso</a>
-                    </li>
-                    <li>
-                        <a data-toggle="modal" data-target="#sobreisabella" role="button" href="#" class="scroll">Sobre
-                            Isabella Ornellas</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Curso de Oratória
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a data-toggle="modal" data-target="#exampleModalCenter1"  class="dropdown-item" href="#" style="color:black;">Sobre o Curso</a>
+                          <a data-toggle="modal" data-target="#exampleModalCenter2" class="dropdown-item" href="#" style="color:black;">Conteúdo do curso</a>
+                          <a data-toggle="modal" data-target="#exampleModalCenter3" class="dropdown-item" href="#" style="color:black;">Formas de pagamento</a>
+                      </div>
+                  </li>
+                  <li>
+                    <a data-toggle="modal" data-target="#sobreisabella" role="button" href="#" class="scroll">Sobre
+                    Isabella Ornellas</a>
+                </li>
+
                     {{-- <li>
                         <a href="#parceiros" class="scroll">Parceiros</a>
                     </li> --}}
@@ -80,8 +88,8 @@
                     <li>
                         @if(Auth::check())
                         <a href="/home"><button type="button" class="btn w3ls-btn" aria-pressed="false">
-                                Área do Participante
-                            </button></a>
+                            Área do Participante
+                        </button></a>
                         @else
                         <button type="button" class="btn w3ls-btn" data-toggle="modal" aria-pressed="false" data-target="#exampleModalCenter2">
                             Área do Participante
@@ -111,101 +119,101 @@
                         </div>
                         <h3 class="txt-w3_agile" data-aos="fade-down">Com Isabella Ornellas </h3>
                         <p class="text-white">
-                         <strong>Sexta</strong> (22/10) das 19h &agrave;s 22h<br /><strong>S&aacute;bado</strong> (23/10) das 08:00 às
-                            18:00<br /><strong>Domingo</strong> (24/10) das 09:00 às 17:00
-                        </p>
-                        <a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Sobre o curso</a>
-                        <a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#depo" data-toggle="" data-target="#depo" role="button">Ver os depoimentos
+                           <strong>Sexta</strong> (22/10) das 19h &agrave;s 22h<br /><strong>S&aacute;bado</strong> (23/10) das 08:00 às
+                           18:00<br /><strong>Domingo</strong> (24/10) das 09:00 às 17:00
+                       </p>
+                       <a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Sobre o curso</a>
+                       <a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#depo" data-toggle="" data-target="#depo" role="button">Ver os depoimentos
 
-                        </a>
+                       </a>
+                   </div>
+                   <div class="col-lg-5 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
+                    <h5><i class="fas mr-2 fa-laptop"></i>Faça já sua inscrição</h5>
+                    @if($errors->any())
+                    <div class="bg-azul p-4">
+                        @foreach($errors->all() as $message)
+                        <p>{{$message}}</p>
+                        @endforeach
                     </div>
-                    <div class="col-lg-5 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
-                        <h5><i class="fas mr-2 fa-laptop"></i>Faça já sua inscrição</h5>
-                        @if($errors->any())
-                        <div class="bg-azul p-4">
-                            @foreach($errors->all() as $message)
-                            <p>{{$message}}</p>
-                            @endforeach
+                    @endif
+                    <form class="mt-4 form-row" method="POST" action="{{route('registrar')}}">
+                        @csrf
+                        <div class=" col-sm-6">
+                            <input class="form-control" type="text" name="name" placeholder="Nome Completo" required="" />
+                            <input class="form-control" type="email" name="email" placeholder="Email" required="" />
+                            <input class="form-control" type="text" name="telefone" placeholder="Telefone" required="" />
+                            <input class="form-control" type="text" name="profissao" placeholder="Profissão" required="" />
                         </div>
-                        @endif
-                        <form class="mt-4 form-row" method="POST" action="{{route('registrar')}}">
-                            @csrf
-                            <div class=" col-sm-6">
-                                <input class="form-control" type="text" name="name" placeholder="Nome Completo" required="" />
-                                <input class="form-control" type="email" name="email" placeholder="Email" required="" />
-                                <input class="form-control" type="text" name="telefone" placeholder="Telefone" required="" />
-                                <input class="form-control" type="text" name="profissao" placeholder="Profissão" required="" />
-                            </div>
-                            <div class="col-sm-6">
+                        <div class="col-sm-6">
 
-                                <input class="form-control" type="text" name="endereco" placeholder="Endereço" required="" />
-                                <input class="form-control" type="text" name="bairro" placeholder="Bairro" required="" />
-                                <input class="form-control" type="text" name="cidade" placeholder="Cidade" required="" />
-                                <input class="form-control" type="password" name="password" placeholder="Senha" required="" />
-                                <input class="form-control" type="password" name="password_confirmation" placeholder="Confirme Senha" required="" />
-                                <input class="form-control text-capitalize" type="submit" value="Cadastrar">
-                            </div>
-                        </form>
-                    </div>
+                            <input class="form-control" type="text" name="endereco" placeholder="Endereço" required="" />
+                            <input class="form-control" type="text" name="bairro" placeholder="Bairro" required="" />
+                            <input class="form-control" type="text" name="cidade" placeholder="Cidade" required="" />
+                            <input class="form-control" type="password" name="password" placeholder="Senha" required="" />
+                            <input class="form-control" type="password" name="password_confirmation" placeholder="Confirme Senha" required="" />
+                            <input class="form-control text-capitalize" type="submit" value="Cadastrar">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <!-- //banner -->
-    </header>
-    <!-- //header -->
+    </div>
+    <!-- //banner -->
+</header>
+<!-- //header -->
 <section class="banner-bottom py-2 bg-azul" id="duvidas">
     <div class="container py-md-3 bg-light" style="border-radius: 30px; ">
-    <p class="text-center"><h3 class="text-center">DÚVIDAS FREQUENTES</h3></p>
-    <p class="text-center">Para quem o Curso de Oratória COMO FALAR EM PÚBLICO é destinado?</p>
-    <hr>
-<p style="text-align: center;"><strong><em>"O nosso curso &eacute; destinado a qualquer pessoa que deseje melhorar a sua
-            comunica&ccedil;&atilde;o."</em></strong></p>
-<p style="text-align: center;">📌</p>
-<p style="text-align: center;">Palestrantes, Advogados, Pol&iacute;ticos, L&iacute;deres, Gestores, Empreendedores,
-    Comerciantes, Vendedores, Profissionais da &aacute;rea de sa&uacute;de, Jornalistas, Professores, Estudantes
-    universit&aacute;rios, Influenciadores digitais... ou seja, Voc&ecirc; que deseja evoluir!</p>
-<p style="text-align: center;"><strong>Esse curso &eacute; para voc&ecirc;!</strong></p>
-<p style="text-align: center;">Venha dar um passo a mais na sua vida profissional e pessoal. Aprimore suas
-    t&eacute;cnicas de comunica&ccedil;&atilde;o e persuas&atilde;o.</p>
-<p style="text-align: center;">🎤🎬</p>
-<p style="text-align: center;"><strong>CURSO COMO FALAR EM P&Uacute;BLICO - ORAT&Oacute;RIA COM ISABELLA
+        <p class="text-center"><h3 class="text-center">DÚVIDAS FREQUENTES</h3></p>
+        <p class="text-center">Para quem o Curso de Oratória COMO FALAR EM PÚBLICO é destinado?</p>
+        <hr>
+        <p style="text-align: center;"><strong><em>"O nosso curso &eacute; destinado a qualquer pessoa que deseje melhorar a sua
+        comunica&ccedil;&atilde;o."</em></strong></p>
+        <p style="text-align: center;">📌</p>
+        <p style="text-align: center;">Palestrantes, Advogados, Pol&iacute;ticos, L&iacute;deres, Gestores, Empreendedores,
+            Comerciantes, Vendedores, Profissionais da &aacute;rea de sa&uacute;de, Jornalistas, Professores, Estudantes
+        universit&aacute;rios, Influenciadores digitais... ou seja, Voc&ecirc; que deseja evoluir!</p>
+        <p style="text-align: center;"><strong>Esse curso &eacute; para voc&ecirc;!</strong></p>
+        <p style="text-align: center;">Venha dar um passo a mais na sua vida profissional e pessoal. Aprimore suas
+        t&eacute;cnicas de comunica&ccedil;&atilde;o e persuas&atilde;o.</p>
+        <p style="text-align: center;">🎤🎬</p>
+        <p style="text-align: center;"><strong>CURSO COMO FALAR EM P&Uacute;BLICO - ORAT&Oacute;RIA COM ISABELLA
         ORNELLAS</strong></p>
     </div>
 </section>
 
-    <!-- banner bottom -->
-    <section class="banner-bottom py-5" id="depo">
-        <div class="container py-md-3">
-            <p class="text-center">
-                <h3 class="text-center">DEPOIMENTOS</h3>
-                <hr>
-            </p>
-            <div class="row">
-                <div class="col-sm-6 mt-2">
-                    <video width="100%" height="100%" controls style="border-radius: 30px; ">
-                        <source src="videos/01.mp4" type="video/mp4">
+<!-- banner bottom -->
+<section class="banner-bottom py-5" id="depo">
+    <div class="container py-md-3">
+        <p class="text-center">
+            <h3 class="text-center">DEPOIMENTOS</h3>
+            <hr>
+        </p>
+        <div class="row">
+            <div class="col-sm-6 mt-2">
+                <video width="100%" height="100%" controls style="border-radius: 30px; ">
+                    <source src="videos/01.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div class="col-sm-6 mt-2">
                     <video width="100%" height="100%" controls style="border-radius: 30px; ">
                         <source src="videos/02.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="col-sm-6 mt-2">
-                    <video width="100%" height="100%" controls style="border-radius: 30px; ">
-                        <source src="videos/03.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="col-sm-6 mt-2">
-                    <video width="100%" height="100%" controls style="border-radius: 30px; ">
-                        <source src="videos/04.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="col-sm-6 mt-2">
+                        <video width="100%" height="100%" controls style="border-radius: 30px; ">
+                            <source src="videos/03.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="col-sm-6 mt-2">
+                            <video width="100%" height="100%" controls style="border-radius: 30px; ">
+                                <source src="videos/04.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
             {{-- <h4 class="text-center" data-aos="zoom-in">Parceiros</h4>
             <ul class="list-unstyled pt-5 partners-icon text-center">
                 <li data-aos="fade-up">
@@ -255,7 +263,7 @@
                     <!-- <div class="footer-text">
 					<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ipnut libero malesuada feugiat.
 					 Lorem ipsum dolor sit amet, consectetur elit.</p>
-				</div> -->
+                    </div> -->
                     <ul class="social_section_1info">
                         <li class="mb-2 facebook"><a href="https://www.facebook.com/cursodeoratoria1-101187468956197/"><i class="fab mr-1 fa-facebook-f"></i>facebook</a></li>
                         <li class="google"><a href="https://instagram.com/cursodeoratoria1?utm_medium=copy_link"><i class="fab mr-1 fa-instagram"></i>Instagram</a></li>
@@ -288,7 +296,13 @@
                 </div>
                 <div class="modal-body container-fluid">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-12">
+                            O Curso de Oratória com a jornalista Isabella Ornellas traz as mais atuais técnicas de comunicação e persuasão, através de ferramentas do Coach e da Programação Neurolinguística (PNL).
+                            O nosso Curso de  Oratória tem a metodologia TPD, que refere-se ao conteúdo teórico, atividades práticas e desafios, com os quais os participantes irão construir conhecimentos sólidos de oratória e comunicação de excelência.
+                            Um curso inovador, atual, que incentiva a autoestima, a autorresponsabilidade e, principalmente, a mudança de percepção sobre o poder inquestionável de uma boa comunicação. 
+                            Você merece fazer parte desta turma! <a href="{{route('login')}}">Inscreva-se!</a>
+                        </div>
+                      {{--   <div class="col-sm-6">
                             <!-- <img src="images/banner.jpg" class="img-fluid mb-3" alt="Modal Image" /> -->
                             Além de ser sinônimo de retórica, a oratória é mais do que uma arte para falar em público, é
                             uma ferramenta, por assim
@@ -333,12 +347,12 @@
                         </div>
                         <div class="col-sm-12">
                             <hr>
-                  <p>Aproveite!!! Rumo ao sucesso!!🎤🎥⚓🎬🧠🌀</p>
-                <p>Estamos com pre&ccedil;os promocionais!</p>
-                <p>De R$ 700,00</p>
-                <p><strong>Por apenas R$ 660,00</strong></p>
-                <p>🎤 PARCELE EM AT&Eacute; 6X SEM JUROS COM O SEU CART&Atilde;O DE CR&Eacute;DITO,</p>
-                <p><strong>PREÇO À VISTA - R$ 590,00</strong></p>
+                            <p>Aproveite!!! Rumo ao sucesso!!🎤🎥⚓🎬🧠🌀</p>
+                            <p>Estamos com pre&ccedil;os promocionais!</p>
+                            <p>De R$ 700,00</p>
+                            <p><strong>Por apenas R$ 660,00</strong></p>
+                            <p>🎤 PARCELE EM AT&Eacute; 6X SEM JUROS COM O SEU CART&Atilde;O DE CR&Eacute;DITO,</p>
+                            <p><strong>PREÇO À VISTA - R$ 590,00</strong></p>
                         </div>
                         <div class="col-sm-12">
                             <p>🎤 PAGAMENTO PELO SITE</p>
@@ -356,8 +370,8 @@
                             <p>Favorecido: Isabella Ornellas Soares</p>
                             <p>100% de satisfa&ccedil;&atilde;o garantida!</p>
                             <p>🛑 &Eacute; NECESS&Aacute;RIO ENVIAR O COMPROVANTE DE PAGAMENTO PARA VALIDA&Ccedil;&Atilde;O DA
-                                INSCRI&Ccedil;&Atilde;O PELO WHATSAPP (87) 99622-1031</p>
-                        </div>
+                            INSCRI&Ccedil;&Atilde;O PELO WHATSAPP (87) 99622-1031</p>
+                        </div> --}}
                         
                     </div>
                     .
@@ -368,7 +382,107 @@
                 </div>
             </div>
         </div>
+    </div> 
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle"><img src="images/logo.png" alt="" style="width: 200px"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row">
+
+                        <div class="col-sm-12">
+                            O curso contempla: <br>
+                            <br>
+                            🎯Oratória em meios virtuais (Novo Normal),<br>
+                            🎯Principais técnicas de Oratória,<br>
+                            🎯Apresentação em Público,<br>
+                            🎯Comunicação e Vendas,<br>
+                            🎯Controle do medo,<br>
+                            🎯Marketing pessoal,<br>
+                            🎯Linguagem corporal,<br>
+                            🎯Dicção e impostação da voz,<br>
+                            🎯Leitura expressiva,<br>
+                            🎯Clareza e objetividade no discurso,<br>
+                            🎯 Técnica V.A.I,<br>
+                            🎯 Técnica TPD - Teoria, Prática e Desafio<br><br>
+
+                            E ainda:<br>
+                            Material didático com apostila completa,<br>
+                            Sorteios,<br>
+                            Brindes,<br>
+                            Coffebreack,<br>
+                            🥇Certificado de 20h
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle"><img src="images/logo.png" alt="" style="width: 200px"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row">
+
+                           <div class="col-sm-12">
+                            <hr>
+                            <p>Aproveite!!! Rumo ao sucesso!!🎤🎥⚓🎬🧠🌀</p>
+                            <p>Estamos com pre&ccedil;os promocionais!</p>
+                            <p>De R$ 700,00</p>
+                            <p><strong>Por apenas R$ 660,00</strong></p>
+                            <p>🎤 PARCELE EM AT&Eacute; 6X SEM JUROS COM O SEU CART&Atilde;O DE CR&Eacute;DITO,</p>
+                            <p><strong>PREÇO À VISTA - R$ 590,00</strong></p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>🎤 PAGAMENTO PELO SITE</p>
+                            <p>CLICK AQUI:</p>
+                            <a href="{{route('login')}}" class="btn btn-primary"> Acesse aqui</a>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <hr>
+                            <p>🎤 PAGAMENTO &Agrave; VISTA</p> <br>
+                            <p>Para pagamento à vista, estamos disponibilizando duas contas para depósito ou transferência bancária e PIX</p>
+                            <p>✅ PIX - CELULAR - 74988031102</p>
+                            <p>✅Bradesco /Ag&ecirc;ncia 3045 /Conta Corrente 45707-8</p>
+                            <p>✅Caixa Econ&ocirc;mica Federal / Ag&ecirc;ncia 0080 / Operação 13 / Conta Poupan&ccedil;a 160 252-5</p>
+                            <p>Favorecido: Isabella Ornellas Soares</p>
+                            <p>100% de satisfa&ccedil;&atilde;o garantida!</p>
+                            <p>🛑 &Eacute; NECESS&Aacute;RIO ENVIAR O COMPROVANTE DE PAGAMENTO PARA VALIDA&Ccedil;&Atilde;O DA
+                            INSCRI&Ccedil;&Atilde;O PELO WHATSAPP (87) 99622-1031</p>
+                        </div>Certificado de 20h
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    
 
     <div class="modal fade" id="sobreisabella" tabindex="-1" role="dialog" aria-labelledby="sobreisabella" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -381,160 +495,145 @@
                 </div>
                 <div class="modal-body text-justify">
 
-                    Mãe, jornalista, mestre de cerimônia, assessora de comunicação, radialista, palestrante e
-                    empreendedora. Especialista em
-                    Gestão empresarial e Marketing, Diretora da agência Atualiz@ Comunicação - voltada para cursos e
-                    palestras. É formada em
-                    Jornalismo em Multimeios pela UNEB. É Coach de Comunicação e Master Practitioner em PNL (Programação
-                    Neurolinguística).
-                    Palestrante na área de Excelência em Comunicação e Atendimento; Mídia Training, Marketing Pessoal,
-                    Empreendedorismo
-                    Criativo e Oratória. <br>
-                    Com quase 20 anos de atuação, Isabella possui vasto conhecimento na área jornalística. Atuou por 15
-                    anos em filiadas da
-                    Rede Globo, onde desempenhou as funções de Chefe de Redação e Reportagem e Coordenadora dos portais
-                    G1 e
-                    GloboEsporte.com, além de repórter, produtora executiva e apresentadora.
-                    <br>
-                    Atualmente apresenta dois programas na Rádio Tropical Sat, em Juazeiro: Ligação Direta Primeira
-                    Edição e Revista com
-                    Isabella Ornellas, onde aborda temas de interesses locais e nacionais. Por dois anos esteve a frente
-                    dos programas
-                    Atualiz@ com Isabella Ornellas e Vida&Saúde, ambos na Rádio Ponte FM, da Rede Novo Tempo, em
-                    Petrolina- PE.
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                </div>
+                  Mãe, esposa, jornalista, mestre de cerimônia, assessora de comunicação, radialista, palestrante e empreendedora. Especialista em Gestão empresarial e Marketing, Diretora da agência Atualiz@ Comunicação - voltada para assessoria de imprensa, cursos e palestras. É formada em Jornalismo em Multimeios pela UNEB. É Coach de Comunicação e Master Practitioner em PNL (Programação Neurolinguística). Palestrante na área de Excelência em Comunicação e Atendimento; Mídia Training, Marketing Pessoal, Empreendedorismo Criativo e Oratória. 
+                  Com 20 anos de atuação, Isabella possui vasto conhecimento na área jornalística. Trabalhou por 15 anos em filiadas da Rede Globo, onde desempenhou as funções de repórter, apresentadora, produtora executiva, Chefe de Redação e Reportagem e Coordenadora dos portais G1 e GloboEsporte.com.
+                  Atualmente apresenta o programa de entrevistas Revista na Rádio Tropical Sat.
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
             </div>
         </div>
     </div>
-    <!-- //Vertically centered Modal -->
+</div>
+<!-- //Vertically centered Modal -->
 
-    <!-- video Modal Popup -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body ">
-                    <div id="demo" class="carousel slide" data-ride="carousel">
+<!-- video Modal Popup -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <div id="demo" class="carousel slide" data-ride="carousel">
 
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                            <li data-target="#demo" data-slide-to="1"></li>
-                            <li data-target="#demo" data-slide-to="2"></li>
-                            <li data-target="#demo" data-slide-to="3"></li>
-                            <li data-target="#demo" data-slide-to="4"></li>
-                            <li data-target="#demo" data-slide-to="5"></li>
-                            <li data-target="#demo" data-slide-to="6"></li>
-                        </ul>
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                        <li data-target="#demo" data-slide-to="4"></li>
+                        <li data-target="#demo" data-slide-to="5"></li>
+                        <li data-target="#demo" data-slide-to="6"></li>
+                    </ul>
 
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/images/depoimentos/01.jpg" alt="depoimento">
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="/images/depoimentos/02.jpg" alt="depoimento">
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="/images/depoimentos/03.jpg" alt="depoimento">
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="/images/depoimentos/04.jpg" alt="depoimento">
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="/images/depoimentos/05.jpg" alt="depoimento">
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="/images/depoimentos/06.jpg" alt="depoimento">
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="/images/depoimentos/07.jpg" alt="depoimento">
-                            </div>
-
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/depoimentos/01.jpg" alt="depoimento">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="/images/depoimentos/02.jpg" alt="depoimento">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="/images/depoimentos/03.jpg" alt="depoimento">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="/images/depoimentos/04.jpg" alt="depoimento">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="/images/depoimentos/05.jpg" alt="depoimento">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="/images/depoimentos/06.jpg" alt="depoimento">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="/images/depoimentos/07.jpg" alt="depoimento">
                         </div>
 
-                        <!-- Left and right controls -->
-
-
                     </div>
-                    <a class="btn btn-dark" href="#demo" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="btn btn-dark" href="#demo" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
+
+                    <!-- Left and right controls -->
+
+
                 </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <a class="btn btn-dark" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="btn btn-dark" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //video Model Popup -->
+
+<!--/Login-->
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-azul">
+            <div class="modal-header text-center">
+                <h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle"><img src="images/logo-curso.png" alt="" style="width: 200px"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login px-4 mx-auto mw-100">
+                    <h5 class="text-center mb-4">Realize seu login</h5>
+                    <form action="{{route('logar')}}" method="post">
+                        @csrf
+                        <div class="form-group">
+                            <label class="mb-2">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="" required="">
+
+                        </div>
+                        <div class="form-group">
+                            <label class="mb-2">Senha</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="" name="password">
+                        </div>
+
+                        <button type="submit" class="btn btn-light btn-block bg-rosa submit mt-2 text-white">Entrar</button>
+
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- //video Model Popup -->
+</div>
+<!--//Login-->
 
-    <!--/Login-->
-    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content bg-azul">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle"><img src="images/logo-curso.png" alt="" style="width: 200px"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="login px-4 mx-auto mw-100">
-                        <h5 class="text-center mb-4">Realize seu login</h5>
-                        <form action="{{route('logar')}}" method="post">
-                            @csrf
-                            <div class="form-group">
-                                <label class="mb-2">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="" required="">
+<!-- js -->
+{{-- <script src="js/jquery-2.2.3.min.js"></script> --}}
+<script src="js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- //js -->
 
-                            </div>
-                            <div class="form-group">
-                                <label class="mb-2">Senha</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="" name="password">
-                            </div>
+<!-- animation js -->
+<script src='js/aos.js'></script>
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+</script>
+<!-- //animation js -->
 
-                            <button type="submit" class="btn btn-light btn-block bg-rosa submit mt-2 text-white">Entrar</button>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--//Login-->
-
-    <!-- js -->
-    <script src="js/jquery-2.2.3.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <!-- //js -->
-
-    <!-- animation js -->
-    <script src='js/aos.js'></script>
-    <script>
-        AOS.init({
-            easing: 'ease-out-back',
-            duration: 1000
-        });
-    </script>
-    <!-- //animation js -->
-
-    <!-- testimonials  Responsiveslides -->
-    <script src="js/responsiveslides.min.js"></script>
-    <script>
+<!-- testimonials  Responsiveslides -->
+<script src="js/responsiveslides.min.js"></script>
+<script>
         // You can also use"$(window).load(function() {"
         $(function() {
             // Slideshow 4
@@ -582,7 +681,7 @@
                }, 500);
                e.preventDefault();
              });
-            */
+             */
 
             //Toggle Menu
             $('#menu-toggle').on('click', () => {
@@ -623,15 +722,15 @@
 				scrollSpeed: 1200,
 				easingType: 'linear' 
 			 };
-			*/
+          */
 
-            $().UItoTop({
-                easingType: 'easeOutQuart'
-            });
-
+          $().UItoTop({
+            easingType: 'easeOutQuart'
         });
-    </script>
-    <!-- //end-smoth-scrolling -->
+
+      });
+  </script>
+  <!-- //end-smoth-scrolling -->
 
 </body>
 
